@@ -1,0 +1,23 @@
+h1{
+	font-size: 250%;
+	color: white;
+	font-family: Lucida Handwriting;
+	text-shadow: 3px 3px 3px black;
+
+}
+
+
+body{
+	background-color: #632432;
+}
+
+table{
+	background-color: grey;
+	}
+tr:nth-child(even){
+background-color: #ddd;
+}
+tr:hover{
+	background-color: #369681;
+	color: white;
+}

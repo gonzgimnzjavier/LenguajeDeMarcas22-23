@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ejemplo TRES rutas</title>
+</head>
+<body>
+
+	<h2>2) El destino del enlace se encuentra cerca de su origen y en un nivel superior</h2>
+
+<p>En este caso, el recurso que se enlaza no está en el mismo directorio que el origen del enlace pero sí que está cerca y en algún directorio superior. La URL relativa debe indicar de alguna manera que es necesario subir un nivel en la jerarquía de directorios para llegar hasta el recurso.</p>
+
+<p>Para indicar al navegador que debe subir un nivel, se incluyen dos puntos y una barra (../) en la ruta del recurso enlazado. De esta forma, cada vez que aparece ../ en una URL relativa, significa que se debe subir un nivel.</p>
+
+<pre>Elemento	Valor
+Página origen	http://www.ejemplo.com/ruta1/ruta2/ruta3/pagina1.html
+Página enlazada	Página web llamada pagina2.html y que se encuentra en el directorio superior llamado ruta2
+URL absoluta	http://www.ejemplo.com/ruta1/ruta2/pagina2.html
+URL relativa	../pagina2.html
+</pre>
+<p>Cuando el navegador encuentra la URL relativa ../pagina2.html, sabe que para encontrar el recurso enlazado (pagina2.html) tiene que subir un nivel desde el lugar en el que se encuentra esa URL relativa. La página que incluye esa URL se encuentra en el directorio ruta1/ruta2/ruta3, por lo que subir un nivel equivale entrar en el directorio ruta1/ruta2.</p>
+
+<p>De la misma forma, si el destino se encuentra un par de niveles por encima, se debe incluir ../ dos veces seguidas:</p>
+
+<pre>Elemento	Valor
+Página origen	http://www.ejemplo.com/ruta1/ruta2/ruta3/pagina1.html
+Página enlazada	Página web llamada pagina2.html y que se encuentra en el directorio superior llamado ruta1
+URL absoluta	http://www.ejemplo.com/ruta1/pagina2.html
+URL relativa	../../pagina2.html
+Además de subir niveles, también se puede entrar en otros directorios para obtener los recursos:</pre>
+
+<pre>Elemento	Valor
+Página origen	http://www.ejemplo.com/ruta1/ruta2/ruta3/pagina1.html
+Página enlazada	Página web llamada pagina2.html y que se encuentra en un directorio llamado ruta4 que se encuentra en la raíz del servidor
+URL absoluta	http://www.ejemplo.com/ruta4/pagina2.html
+URL relativa	../../../ruta4/pagina2.html
+Si se intentan subir más niveles de los que es posible, el navegador ignora todos los ../ sobrantes. Si la página que tiene el enlace es http://www.ejemplo.com/ruta1/ruta2/ruta3/pagina1.html y la URL relativa que se incluye es ../../../../../pagina2.html, el navegador realmente la interpreta como ../../../pagina2.html.</pre>
+
+
+<p>Como el objetivo de las URL relativas es crear URL más cortas y sencillas que las URL absolutas, este método sólo se puede utilizar cuando el origen y el destino se encuentran cerca, porque de otro modo la URL relativa se complica demasiado.</p>
+<br>
+<h2>Esta es la pagina 1</h2>
+<br>
+<a href="../pagina2.html">Salta a la pagina 2</a>
+
+<br>
+<a href="../../pagina3.html">SALTAMOS A LA PAGINA3</a>
+<br>
+<a href="../../../ruta4/pagina4.html">SALTA A PAGINA 4</a>
+
+
+
+
+</body>
+</html>

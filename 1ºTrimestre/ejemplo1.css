@@ -1,0 +1,6 @@
+/*texto  color verde 18pt Comic Sans*/ 
+
+p{ color: green;
+	font-size: 18pt;
+	font-family: Comic Sans MS;
+}

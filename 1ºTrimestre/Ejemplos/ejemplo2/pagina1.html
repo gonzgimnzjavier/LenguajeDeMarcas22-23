@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ejemplo 1 rutas</title>
+</head>
+<body>
+
+	<h2>3) El destino del enlace se encuentra cerca de su origen y en un nivel inferior</h2>
+
+
+<p>Este caso es muy similar al anterior, pero más sencillo. Si el recurso enlazado se encuentra en algún directorio inferior al que se encuentra el origen, sólo es necesario indicar el nombre de los directorios a los que debe entrar el navegador.</p>
+
+<pre>Elemento	Valor
+Página origen	http://www.ejemplo.com/ruta1/ruta2/ruta3/pagina1.html
+Página enlazada	Página web llamada pagina2.html y que se encuentra en un directorio inferior llamado ruta4
+URL absoluta	http://www.ejemplo.com/ruta1/ruta2/ruta3/ruta4/pagina2.html
+URL relativa	ruta4/pagina2.html
+De la misma forma, se pueden indicar varios directorios seguidos para que el navegador descienda jerárquicamente por la estructura de directorios:</pre>
+
+<pre>Elemento	Valor
+Página origen	http://www.ejemplo.com/ruta1/ruta2/ruta3/pagina1.html
+Página enlazada	Página web llamada pagina2.html y que se encuentra en un directorio inferior llamado ruta6 que está dentro del directorio ruta5 y que a su vez está dentro del directorio ruta4
+URL absoluta	http://www.ejemplo.com/ruta1/ruta2/ruta3/ruta4/ruta5/ruta6/pagina2.html
+URL relativa	ruta4/ruta5/ruta6/pagina2.html</pre>
+<br>
+<h2>ESTA ES LA PAGINA 1</h2>
+<br>
+<a href="ruta4/pagina2.html">Salta a la pagina 2</a>
+<br>
+
+<a href="ruta4/ruta 5/ruta 6/pagina3.html">Salta a la pagina 3</a>
+
+
+
+
+</body>
+</html>
