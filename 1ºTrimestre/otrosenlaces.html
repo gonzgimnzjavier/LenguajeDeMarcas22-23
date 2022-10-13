@@ -4,11 +4,34 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Otros Enlaces</title>
-</head>
+	<script type="text/javascript">
+  //<![CDATA[
+    window.onload = function() { alert("La página se ha cargado completamente"); }
+  //]]>
+  </script>
 <body>
 
-	<h2>Ejemplo de apertura de una imagen</h2>
-	<a href="https://www.cebem.net/images/logos/logo-grafico-y-texto.png">Imagen interesante para un fondo de escritorio</a>
+	<!-- Abrir en vetana no tamaño completo-->
 
+	<h2>Ejemplo de apertura de una imagen</h2>
+	<a href="https://www.cebem.net/images/logos/logo-grafico-y-texto.png" target="_blank">Imagen interesante para un fondo de escritorio</a>
+	<br>
+
+
+	<!--FORZAR DESCARGA DEL FICHERO-->
+	<h2>Ejemplo de apertura de un fichero</h2>
+	<a href="Javier_Gonzalez_GimenezEvaluacionInicial.pdf" target="_blank"  download="Javier_Gonzalez_GimenezEvaluacionInicial.pdf">Descargar fichero pdf</a>
+
+
+		<!-- se podria añadir además  de la dirección, el asunto (subject) y 
+			el cuerpo del mesnaje???-->
+		<h2>Ejemplo de enlace a un email</h2>
+		<a href="mailto:nombre@direccion.com?subject=Solicitud de más información" title="Dirección de email para
+		solicitar más información">Solicita más información</a>
+
+		<h2> enlanzar un archivo ftp</h2>
+		<a href="ftp://ftp.ejemplo.com/ruta/archivo.zip" title="Archivo comprimido de los contenidos">
+		Descarga un ZIP con todos los contenidos
+		</a>
 </body>
 </html>
