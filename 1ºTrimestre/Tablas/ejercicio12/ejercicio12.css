@@ -1,0 +1,38 @@
+table{
+	border: 1px  solid lightgrey;
+	border-collapse: collapse;
+	background-color: white;
+}
+th {
+	border: 1px solid black;
+	text-align: center;
+	padding: 5px;
+	border-collapse: collapse;
+	background-color: #246355;
+	color: white;
+	
+}
+
+td {
+	border: 1px solid lightgrey;
+	text-align: left;
+	padding: 5px;
+	border-collapse: collapse;
+
+}
+body {
+	background-color: #632432;
+}
+h1{
+	color: white;
+}
+tr:nth-child(odd){
+	background-color: #ddd;
+}
+tr:hover{
+	background-color: #369681;
+	color: white;
+}
+p{
+	color: white;
+}

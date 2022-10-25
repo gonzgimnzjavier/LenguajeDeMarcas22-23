@@ -1,0 +1,11 @@
+div{
+	width: 40%;
+	margin: auto;
+	background-color: magenta;
+	text-align: center;
+}
+
+table{
+	border: 1px solid black;
+	margin: auto;
+}

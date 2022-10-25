@@ -1,0 +1,22 @@
+
+table{
+	border: 1px solid black;
+	border-collapse: collapse;
+	margin: auto;
+	width: 10%;
+}
+td{
+	border: 1px solid black;
+	border-collapse: collapse;
+	margin: auto;
+	text-align: center;
+	
+}
+tr{
+	border: 1px solid black;
+	border-collapse: collapse;
+	margin: auto;
+}
+div{
+	background-color: yellow;
+}
