@@ -3,9 +3,22 @@ div{
 	margin: auto;
 	background-color: magenta;
 	text-align: center;
+	border: 2px solid black;
+	border-collapse: collapse;
 }
 
 table{
-	border: 1px solid black;
+	border: 2px solid black;
 	margin: auto;
+	color: #f6ff00;
+	border-collapse: collapse;
+}
+td{
+	border: 2px solid black;
+	border-collapse: collapse;
+}
+th{
+	border: 2px solid black;
+	border-collapse: collapse;
+}
 }
