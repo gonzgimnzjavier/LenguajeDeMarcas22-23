@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ejemplo 2 EMBED Y OBJECT</title>
+</head>
+<body>
+<h2>object y una imagen</h2>
+<object data="Imagenes/pic_trulli.jpg" width="300" height="200"></object>
+
+<h2>object y un HTML</h2>
+<object data="ejemplo1.html" width="500" height="200"></object>
+
+<h2>object y un video</h2>
+<object data="videos/movie.mp4" width="400" height="300"></object>
+
+<h2>WARNING</h2>
+<p>
+	To embed a picture, it is better to use the img tag.
+
+To embed HTML, it is better to use the iframe tag.
+
+To embed video or audio, it is better to use the video and audio tags.
+</p>
+
+<h2>embed y una imagen</h2>
+<embed src="Imagenes/pic_trulli.jpg" width="300" height="200"></embed>
+
+<h2>embed y un HTML</h2>
+<embed src="ejemplo1.html" width="500" height="200"></embed>
+
+<h2>embed y un video</h2>
+<embed src="videos/movie.mp4" width="400" height="300"></embed>
+
+<h2>Incrustar un video</h2>
+<video width="320" height="240" controls>
+  <source src="videos/movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+<h2>Incrustar un audio</h2>
+<audio controls>
+  <source src="audios/horse.ogg" type="audios/ogg">
+  <source src="audios/horse.mp3" type="audios/ogg">
+  Your browser does not support the video tag.
+
+
+
+</body>
+</html>
