@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="formu.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ejemplo 2</title>
+</head>
+
+<body>
+    <div>
+    	<h3>Formulario Estrucutrado</h3>
+        <form action="maneja_formulario.php" method="post">
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label>Nombre</label> <br />
+                <input type="text" name="nombre" value="" />
+                <br />
+                <label>Apellidos</label> <br />
+                <input type="text" name="apellidos" value="" />
+                <br />
+                <label>DNI</label> <br />
+                <input type="text" name="dni" value="" size="10" maxlength="9" />
+            </fieldset>
+            <fieldset>
+                <legend>Datos de conexión</legend>
+                Nombre de usuario<br />
+                <input type="text" name="nombre" value="" maxlength="10" />
+                <br />
+                <label>Contraseña</label><br />
+                <input type="password" name="password" value="" maxlength="10" />
+                <br />
+                <label>Repite la contraseña</label><br />
+                <input type="password" name="password2" value="" maxlength="10" />
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>

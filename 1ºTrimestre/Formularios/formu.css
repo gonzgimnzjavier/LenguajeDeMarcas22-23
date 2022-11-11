@@ -1,0 +1,18 @@
+div{
+	width: 60%;
+	margin: auto;
+	background-color: #dd;
+}
+input,textarea{
+	margin: 7px;
+}
+fieldset{
+	margin:10px;
+}
+
+legend{
+	color: hotpink;
+}
+select{
+	margin: 10px;
+}

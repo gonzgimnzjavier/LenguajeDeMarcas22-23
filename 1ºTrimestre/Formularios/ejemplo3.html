@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ejemplo 3 form</title>
+    <link rel="stylesheet" type="text/css" href="formu.css">
+</head>
+
+<body>
+    <div>
+        <h3>Otros Elementos formularios</h3>
+        <form action="insertar_producto.php" method="post">
+            <label for="nombre">Nombre del producto</label>
+            <br>
+            <input type="text" id="nombre" name="nombre" value="" />
+            <br>
+            <label for="descripcion">Descripción del producto</label>
+            <br>
+            <textarea id="descripcion" name="descripcion" cols="40" rows="5">
+            </textarea>
+        </form>
+    </div>
+    <div>
+        <h3>Datos seleccionables</h3>
+        <form action="insertar_producto.php" method="post">
+            <label for="nombre">Nombre del producto</label>
+            <label for="so">Sistema operativo</label> <br />
+            <select id="so" name="so">
+                <option value="" selected="selected">- selecciona -</option>
+                <option value="windows">Windows</option>
+                <option value="mac">Mac</option>
+                <option value="linux">Linux</option>
+                <option value="otro">Otro</option>
+            </select>
+            <br>
+            <label for="so2">Sistema operativo</label> <br />
+            <select id="so2" name="so2" size="5">
+                <option value="windows" selected="selected">Windows</option>
+                <option value="mac">Mac</option>
+                <option value="linux">Linux</option>
+                <option value="otro">Otro</option>
+            </select>
+            <br>
+            <label for="so3">Sistema operativo</label> <br />
+            <select id="so3" name="so3" size="4" multiple="multiple">
+                <option value="windows" selected="selected">Windows</option>
+                <option value="mac">Mac</option>
+                <option value="linux">Linux</option>
+                <option value="otro">Otro</option>
+            </select>
+    </div>
+    <br>
+    <div>
+        <h3>Listas de divisores</h3>
+        <form id="formulario" method="post" action="insertar_producto.php">
+            <label for="programa">Programa seleccionado</label> <br />
+            <select id="programa" name="programa" size="11" multiple>
+                <optgroup label="Sistemas Operativos">
+                    <option value="Windows" selected="selected">Windows</option>
+                    <option value="Mac">Mac</option>
+                    <option value="Linux">Linux</option>
+                    <option value="Other">Otro</option>
+                </optgroup>
+                <optgroup label="Navegadores">
+                    <option value="Internet Explorer" selected="selected">Internet Explorer</option>
+                    <option value="Firefox">Firefox</option>
+                    <option value="Safari">Safari</option>
+                    <option value="Opera">Opera</option>
+                    <option value="Other">Otro</option>
+                </optgroup>
+            </select>
+        </form>
+    </div>
+</body>
+
+</html>
