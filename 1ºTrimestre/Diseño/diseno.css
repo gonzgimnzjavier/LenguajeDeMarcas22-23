@@ -1,0 +1,17 @@
+#contenedor {
+	width: 80%;
+	margin: auto;
+	background-color: #eeccdd;
+	height: 300px;
+}
+h1, h2, h3{
+	text-align: center;
+}
+
+.caja{
+	float: left;
+	width: 10%;
+	background-color: yellow;
+	padding: 10px;
+	margin: 20px;
+}
